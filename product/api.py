@@ -7,7 +7,7 @@ api = Api(app)
 class Product(Resource):
     def get(self):
         return {
-                'product' : ['Ice cream',
+                'products' : ['Ice cream',
                             'Chocolate',
                             'Fruit',
                             'Eggs']
@@ -15,4 +15,4 @@ class Product(Resource):
 api.add_resource(Product, '/')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=81, debug=True)
+    app.run(host='0.0.0.0',port=80, debug=True)
